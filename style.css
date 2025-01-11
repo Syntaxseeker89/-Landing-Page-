@@ -1,0 +1,64 @@
+﻿from IPython.core.display import HTML
+
+
+html_code = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Landing Page</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+background: #333;
+color: #fff;
+padding: 1rem;
+text-align: center;
+}
+section {
+padding: 2rem;
+}
+button {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+button:hover {
+background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to My Landing Page</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<section id="hero">
+<h2>Catchy Headline</h2>
+<p>A brief description of what this page is about.</p>
+<button>Learn More</button>
+</section>
+<section id="about">
+<h2>About</h2>
+<p>Information regarding your topic or product.</p>
+</section>
+<footer>
+<p>&copy; 2025 My Landing Page</p>
+</footer>
+</body>
+</html>
+"""
+
+
+# Render the complete HTML and CSS
+HTML(html_code)
